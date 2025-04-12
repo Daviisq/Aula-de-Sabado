@@ -20,9 +20,9 @@ export default function Form() {
 
     return (
         <View style={{ padding: 20 }}>
-            <TextInput placeholder="Nome" onChangeText={setName}/>
-            <TextInput placeholder="Idade" onChangeText={setIdade}/>
-            <TextInput placeholder="CPF" onChangeText={setCpf}/>
+            <TextInput placeholder="N° do Cartão" onChangeText={setName}/>
+            <TextInput placeholder="CVC" onChangeText={setIdade}/>
+            <TextInput placeholder="Senha" onChangeText={setCpf}/>
 
             <Button title="Mostrar Informações" onPress={() => (setMostrar(true))}/>
 

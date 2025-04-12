@@ -1,6 +1,7 @@
 import CustomButton from "@/components/CustomButton";
 import Example from "@/components/Example";
 import Form from "@/components/Form";
+import { router } from "expo-router";
 import React, { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
@@ -28,6 +29,10 @@ export default function HomeScreen(){
               <CustomButton title="Botão vsf" onPress={()=>{setCount(count + 1)}}/>
             <Example/>
             <Form/>
+            <Button 
+                title="stcak" 
+                onPress={() => router.push('/navigation/stack')}
+            />
         </View>
     );
 }
